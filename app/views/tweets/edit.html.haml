@@ -1,0 +1,22 @@
+.wrapper
+  = render 'header'
+  .main_new
+    = form_with model: @tweet, class: :form_new, local: true do |form|
+      .word_new
+        投稿する
+      = form.text_field :title, placeholder: "title", class: :title_new
+      = form.radio_button :area_id,1,class: :btn_new
+      東北
+      = form.radio_button :area_id,2,class: :btn_new
+      関東
+      = form.radio_button :area_id,3,class: :btn_new
+      中部
+      = form.radio_button :area_id,4,class: :btn_new
+      中国
+      = form.radio_button :area_id,5,class: :btn_new
+      九州
+      = form.text_field :address, placeholder: "市町村",class: :address_new 
+      = form.text_area :text, placeholder: "text" ,class: :text_new
+      = form.file_field :image,class: :image_new
+      = form.submit "編集",class: :submit_new
+      

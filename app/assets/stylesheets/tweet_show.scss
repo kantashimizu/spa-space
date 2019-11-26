@@ -1,0 +1,92 @@
+.main_show{
+  height:calc(100vh - 90px);
+  background-image:url("/background3.jpg");
+  background-size: cover;
+  padding-top:90px;
+  .show_content{
+    height:calc(100vh - 90px);
+    width: 50%;
+    background-color: rgba(236, 245, 236,0.3);
+    margin-left: 719px;
+    overflow:auto;
+    .show_box{
+      width: 100%;
+      height:calc(100vh - 90px);
+      background-color:rgba(63, 54, 54, 0.2);
+      animation: Back 5s forwards;
+      .name_time{
+        display: flex;
+        .show_name{
+          width: 25%;
+          height: 40px;
+          text-align: center;
+          font-size:30px;
+          color: black;
+          font-weight: bold;
+          margin-top:10px;
+        }
+        .show_time{
+          width: 25%;
+          height: 30px;
+          float: left;
+          margin-top: 20px;
+          line-height:30px;
+        }
+        .destroy_edit{
+          width: 25%;
+          height: 30px;
+          float: left;
+          margin-top: 20px;
+          line-height:30px;
+        }a{
+          text-decoration: none !important; 
+          color: white !important;
+        }
+      }
+      .area_address{
+        height: 20px;
+        width: 100%;
+        display: flex;
+        margin-top:3px;
+        margin-left:80px;
+        .show_area{
+          width: 100px;
+          
+        }
+        .show_address{
+          width: 70%;
+        }
+      }
+      .show_image{
+        width: 80%;
+        height: 350px;
+        margin: 0 auto;
+        margin-top:10px;
+      }
+    .show_text{
+      width: 80%;
+      height: 250px;
+      margin: 0 auto;
+      margin-top:30px;
+      color: blanchedalmond;
+    }
+    }
+  }
+}
+@keyframes Back {
+  0%{
+    opacity: 0;
+  }
+  25%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.4;
+  }
+  75%{
+    opacity: 0.6;
+  }
+  100%{
+    opacity: 1;
+  }
+}

@@ -1,0 +1,15 @@
+.wrapper
+  = render 'header'
+  .main
+    .content
+      .content-new
+        =link_to '新規投稿','/tweets/new'
+      .content-show
+        =link_to '投稿一覧','/tweets/show'
+      .content-area
+        地域別
+    .content_option.none
+      - @areas.each do |area|
+        = link_to "/areas/#{area.id}" do
+          = area.name
+      

@@ -1,0 +1,20 @@
+.wrapper
+  = render 'header'
+  .main_show
+    .show_content
+      - @tweets.each do |tweet|
+        .show_box
+          .name_time
+            .show_name
+              = current_user.name
+            .show_time
+              = tweet.created_at.strftime('%Y/%m/%d %H:%M')
+          .area_address
+            .show_area
+              地域
+            .show_address
+              = tweet.address
+          .show_image
+            = image_tag tweet.image.url
+          .show_text
+            = tweet.text
