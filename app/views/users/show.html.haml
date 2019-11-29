@@ -1,6 +1,7 @@
 .wrapper
   = render 'tweets/header'
   .main_show
+    .main_show_tweet_back
     .show_content
       - @tweets.each do |tweet|
         .show_box
@@ -15,7 +16,7 @@
                 = link_to '編集', "/tweets/#{tweet.id}/edit", method: :get
           .area_address
             .show_area
-              地域
+              = tweet.area.name
             .show_address
               = tweet.address
           .show_image

@@ -7,6 +7,7 @@ class CreateTweets < ActiveRecord::Migration[5.2]
       t.string :address ,null:false
       t.integer :user_id ,foreign_key:true
       t.integer :area_id ,foreign_key:true
+      t.integer :rate
       t.timestamps
     end
   end

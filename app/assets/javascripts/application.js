@@ -16,10 +16,27 @@
 //= require_tree .
 //= require jquery 
 //= require jquery_ujs 
+//= require audiojs
 
 $(function() {
+  
   $('.content-area').click(function(){
-    $('.content_option').toggle();('none');
+    $('.background_japan').toggle(1000);('none');
   });
+
+  $('.main_a').click(function(){
+    $(".main").removeClass("none");
+  });
+
+  function none() {
+    $(".main").removeClass("none");
+  }
+  setTimeout(none,8000)
+  function none_a() {
+    $(".main").addClass("none");
+  }
+
+  setTimeout(none_a,180000)
 });
-/////
+
+

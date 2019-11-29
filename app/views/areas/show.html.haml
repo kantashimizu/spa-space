@@ -1,0 +1,32 @@
+.wrapper
+  = render 'tweets/header'
+  .main_show_area
+    .main_show_area_back
+    .show_content
+      - @tweets.each do |tweet|
+        .show_box
+          .name_time
+            .show_name
+              = current_user.name
+            .show_time
+              = tweet.created_at.strftime('%Y/%m/%d %H:%M')
+            .show_star
+              - if tweet.rate ==  1
+                評価 : ★
+              - elsif tweet.rate ==  2
+                評価 :  ★★
+              - elsif tweet.rate ==  3
+                評価 :  ★★★
+              - elsif tweet.rate ==  4
+                評価 :  ★★★★
+              - elsif tweet.rate ==  5
+                評価 : ★★★★★
+          .area_address
+            .show_area
+              地域
+            .show_address
+              = tweet.address
+          .show_image
+            = image_tag tweet.image.url
+          .show_text
+            = tweet.text

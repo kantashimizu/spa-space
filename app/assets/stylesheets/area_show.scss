@@ -1,32 +1,20 @@
-.main_show{
+.main_show_area{
   height:calc(100vh - 90px);
-  background-image:url("/background3.jpg");
+  background-image:url("/background6.jpg");
   background-size: cover;
   padding-top:90px;
-  display:flex;
-  .main_show_tweet_back{
+  display: flex;
+  .main_show_area_back{
     height:calc(100vh - 90px);
     width: 50%;
     background-color:white;
-    opacity: 0.3;
-    position: relative;
-    .search-form{
-      width: 200px;
-      height: 50px;
-      position: absolute;
-      right: 0;
-      top:10px;
-      .search-input{
-        height: 20px;
-        width: 150px;
-      }     
-    }
+    opacity: 0.5;
   }
   .show_content{
     height:calc(100vh - 90px);
     width: 50%;
     background-color: rgba(236, 245, 236,0.3);
-    //margin-left: 719px;
+    
     overflow:auto;
     .show_box{
       width: 100%;
@@ -69,36 +57,37 @@
           text-decoration: none !important; 
           color: white !important;
         }
-      }
-      .area_address{
-        height: 20px;
-        width: 100%;
-        display: flex;
-        margin-top:3px;
-        margin-left:80px;
-        .show_area{
-          width: 100px;
-          
         }
-        .show_address{
-          width: 70%;
+        .area_address{
+          height: 20px;
+          width: 100%;
+          display: flex;
+          margin-top:3px;
+          margin-left:80px;
+          .show_area{
+            width: 100px;
+            
+          }
+          .show_address{
+            width: 70%;
+          }
         }
-      }
-      .show_image{
+        .show_image{
+          width: 80%;
+          height: 350px;
+          margin: 0 auto;
+          margin-top:10px;
+        }
+      .show_text{
         width: 80%;
-        height: 350px;
+        height: 250px;
         margin: 0 auto;
-        margin-top:10px;
-      }
-    .show_text{
-      width: 80%;
-      height: 250px;
-      margin: 0 auto;
-      margin-top:30px;
-      color: blanchedalmond;
+        margin-top:30px;
+        color: blanchedalmond;
     }
     }
-  }
+   }
+  
 }
 @keyframes Back {
   0%{

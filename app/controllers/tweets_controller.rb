@@ -1,7 +1,7 @@
 class TweetsController < ApplicationController
   
   def index
-    @areas = Area.all
+    
   end
 
   def new
@@ -15,7 +15,8 @@ class TweetsController < ApplicationController
   end
 
   def show
-    @tweets = Tweet.all
+    @tweets = Tweet.all.order(:created_at)
+    @tweets = Tweet.search(params[:keyword])
   end
 
   def destroy
@@ -34,8 +35,12 @@ class TweetsController < ApplicationController
     redirect_to root_path
   end
 
+  def search
+    @tweets = Tweet.search(params[:keyword])
+  end
+
   private
   def tweet_params
-    params.require(:tweet).permit(:title,:text,:image,:address,:area_id).merge(user_id: current_user.id)
+    params.require(:tweet).permit(:title,:text,:image,:address,:area_id,:rate).merge(user_id: current_user.id)
   end
 end

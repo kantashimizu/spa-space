@@ -1,15 +1,31 @@
 .wrapper
   = render 'header'
-  .main
+  .main_a
+    %audio{:controls => "", :src => "tori.mp4",autoplay:"true"}
+    .open_box
+      .open_1
+        日本の秘湯
+      .open_2
+        寛ぎと癒しの時に浸る
+      .open_3
+        日本の美しさを改めて知り
+  .main.none
+    .bou
+    .background_japan    
+      .japan1
+        = link_to '東北',"/areas/1"
+      .japan2
+        = link_to '関東',"/areas/2"
+      .japan3
+        = link_to '中部',"/areas/3"
+      .japan4
+        = link_to '中国',"/areas/4"
+      .japan5
+        = link_to '九州',"/areas/5"
     .content
       .content-new
-        =link_to '新規投稿','/tweets/new'
+        =link_to '新規投稿','/tweets/new' 
       .content-show
         =link_to '投稿一覧','/tweets/show'
       .content-area
         地域別
-    .content_option.none
-      - @areas.each do |area|
-        = link_to "/areas/#{area.id}" do
-          = area.name
-      

@@ -1,7 +1,7 @@
 .header
   .header-home
     = link_to root_path do
-      = image_tag "/home.jpeg",heith:90,width:90
+      = image_tag "/onsen.png",heith:80,width:90
   .header-title
     日 本 の 秘 湯
   .header-content_a 
@@ -9,3 +9,5 @@
       = current_user.name
   .header-content_b
     = link_to "ログアウト", destroy_user_session_path, method: :delete
+
+    

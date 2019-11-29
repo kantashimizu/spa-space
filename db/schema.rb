@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 2019_11_26_031119) do
     t.string "address", null: false
     t.integer "user_id"
     t.integer "area_id"
+    t.integer "rate"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
