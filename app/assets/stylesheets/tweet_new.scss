@@ -7,7 +7,7 @@
   .form_new{
       width: 50%;
       height:700px;
-      background-color: rgba(128, 128, 128,0.8);
+      background-color: rgb(128, 128, 128);
       animation: New1 2s forwards;
       position: relative;
       border-radius: 10%;
@@ -112,7 +112,7 @@
     opacity: 0.1;
   }
   100%{
-    opacity: 0.5;
+    opacity: 0.8;
   }
 }
 @keyframes Pa {
