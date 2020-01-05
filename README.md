@@ -18,8 +18,8 @@ TECH::EXPERTの基礎カリキュラム修了時にCSSの機能を沢山使い�
 ## 工夫した点
 ・cssのanimationのみで最初のオープニングを演出した事です。  
 以下の様に時間差で文字の表示を行い、animationを制作しました。  
-``  
-@keyframes Background {  
+```
+@keyframes Background { 
   0%{  
     opacity:  0;  
   }  
@@ -62,12 +62,13 @@ TECH::EXPERTの基礎カリキュラム修了時にCSSの機能を沢山使い�
   100%{  
     opacity: 1;  
   }  
-``
+```
 そしてJSを使いクリック時にはオープニングをスキップ出来る様に致しました。  　　
 ・投稿時に評価機能を付けました<br>   
 以下のコードで星マークを演出し、cssでhover時に変化を加えて直感的に操作を出来る様に致しました。
-``
+
 ### HTML
+```
 .evaluation  
   = form.radio_button :rate,5,id: :star1  
   %label{for:"star1"}  
@@ -108,7 +109,7 @@ TECH::EXPERTの基礎カリキュラム修了時にCSSの機能を沢山使い�
 .evaluation input[type='radio']:checked ~ label{  
   color: #ffcc00;  
 }   
-``  
+```
 
 
 
