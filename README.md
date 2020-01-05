@@ -16,7 +16,7 @@
 TECH::EXPERTの基礎カリキュラム修了時にCSSの機能を沢山使い技術の定着させたいと思い、私の趣味である温泉のサイトを制作致しました。
 
 ## 工夫した点
-・cssのanimationのみで最初のオープニングを演出した事です。 <br> 
+・cssのanimationのみで最初のオープニングを演出した事です。<br>
 以下の様に時間差で文字の表示を行い、animationを制作しました。 <br>
 ```
 @keyframes Background { 
@@ -63,7 +63,7 @@ TECH::EXPERTの基礎カリキュラム修了時にCSSの機能を沢山使い�
     opacity: 1;  
   }  
 ```
-そしてJSを使いクリック時にはオープニングをスキップ出来る様に致しました。<br>　　
+そしてJSを使いクリック時にはオープニングをスキップ出来る様に致しました。<br>
 ・投稿時に評価機能を付けました<br>   
 以下のコードで星マークを演出し、cssでhover時に変化を加えて直感的に操作を出来る様に致しました。<br>
 
@@ -76,8 +76,10 @@ TECH::EXPERTの基礎カリキュラム修了時にCSSの機能を沢山使い�
     ★  
   = form.radio_button :rate,4,id: :star2  
   %label{for:"star2"}  
-    %span.text> 良い  
+    %span.text> 良い 
+```
 ### CSS  
+```
 .evaluation{  
   display: flex;  
   flex-direction: row-reverse;  
