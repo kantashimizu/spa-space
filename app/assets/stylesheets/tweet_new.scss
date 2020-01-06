@@ -129,8 +129,11 @@
   .main_new{
     max-width: 600px!important;
     width: 100%;
+    height: 100vh;
   .form_new{
     width: 100%;
+    height:auto;
+    padding-bottom: 10px;
     .title_new{
       width: 300px;
     }
