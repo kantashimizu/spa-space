@@ -106,3 +106,32 @@
     opacity: 1;
   }
 }
+
+@media screen and(max-width:600px){
+  .main_show_area{
+    max-width: 600px!important;
+    width: 100%;
+    .main_show_area_back{
+      display: none;
+    }
+    .show_content{
+      width: 100%;
+      .show_star{
+        position: absolute;
+        right: 10px;
+      }
+      
+    }
+    img{
+      width: 300px!important;
+      height: 200px!important;
+      height: auto;
+    }
+    .show_image{
+      height:200px!important;
+    }
+    .show_text{
+      height: auto!important;
+    }
+  }
+}

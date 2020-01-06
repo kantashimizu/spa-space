@@ -124,3 +124,33 @@
     background-color:rgb(58, 55, 55);
   }
 }
+
+@media screen and(max-width:600px){
+  .main_new{
+    max-width: 600px!important;
+    width: 100%;
+  .form_new{
+    width: 100%;
+    .title_new{
+      width: 300px;
+    }
+    .btn_new{
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    #text{
+      display: inline;
+      font-size: 0.7rem;
+    }
+    .text_new{
+      margin-top: 60px;
+      margin-left: 35px;
+      width: 300px;
+      height: 300px;
+    }
+    .submit_new{
+      margin-left: 130px;
+    }
+  }
+}
+}

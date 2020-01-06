@@ -139,3 +139,15 @@
     font-size: 13px;
   }
 }
+@media screen and(max-width:600px){
+  .account-page__inner{
+    max-width: 600px!important;
+    width: 100%;
+  }
+  .account-page__inner--left, .account-page__inner--right {
+    clear: both;
+  }
+  input{
+    background-color: rgb(235, 235, 225);
+  }
+}
