@@ -17,11 +17,12 @@ TECH::EXPERTの基礎カリキュラム修了時にCSSの機能を沢山使い�
 
 ## 工夫した点
 ・cssのanimationのみで最初のオープニングを演出した事です。<br>
-
-<img width="735" alt="スクリーンショット 2020-01-07 21 42 32" src="https://user-images.githubusercontent.com/57340298/71896283-b2a16b00-3196-11ea-84f5-249e8ae021fc.png">
-<img width="1440" alt="スクリーンショット 2020-01-07 21 37 50" src="https://user-images.githubusercontent.com/57340298/71896286-b634f200-3196-11ea-9c6e-a0126dc4bafa.png">
+# １枚目
+三行の文字が順番に表示されます。<br>
 <img width="1440" alt="スクリーンショット 2020-01-07 21 37 45" src="https://user-images.githubusercontent.com/57340298/71896289-b7feb580-3196-11ea-8491-3baebb2718ed.png">
 
+# ２枚目（6秒後）
+<img width="1440" alt="スクリーンショット 2020-01-07 21 37 50" src="https://user-images.githubusercontent.com/57340298/71896286-b634f200-3196-11ea-9c6e-a0126dc4bafa.png">
 
 以下の様に時間差で文字の表示を行い、animationを制作しました。 <br>
 ```
@@ -69,8 +70,21 @@ TECH::EXPERTの基礎カリキュラム修了時にCSSの機能を沢山使い�
     opacity: 1;  
   }  
 ```
-そしてJSを使いクリック時にはオープニングをスキップ出来る様に致しました。<br>
+以下の様にJSを使いクリック時にはオープニングをスキップ出来る様に致しました。<br>
+
+```
+function none() {
+    $(".main").removeClass("none");
+  }
+  setTimeout(none,8000)
+  function none_a() {
+    $(".main").addClass("none");
+  }
+  setTimeout(none_a,180000)
+  ```
+
 ・投稿時に評価機能を付けました<br>   
+<img width="735" alt="スクリーンショット 2020-01-07 21 42 32" src="https://user-images.githubusercontent.com/57340298/71896283-b2a16b00-3196-11ea-84f5-249e8ae021fc.png">
 以下のコードで星マークを演出し、cssでhover時に変化を加えて直感的に操作を出来る様に致しました。<br>
 
 ### HTML
