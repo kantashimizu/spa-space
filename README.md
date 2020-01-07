@@ -17,6 +17,12 @@ TECH::EXPERTの基礎カリキュラム修了時にCSSの機能を沢山使い�
 
 ## 工夫した点
 ・cssのanimationのみで最初のオープニングを演出した事です。<br>
+
+<img width="735" alt="スクリーンショット 2020-01-07 21 42 32" src="https://user-images.githubusercontent.com/57340298/71896283-b2a16b00-3196-11ea-84f5-249e8ae021fc.png">
+<img width="1440" alt="スクリーンショット 2020-01-07 21 37 50" src="https://user-images.githubusercontent.com/57340298/71896286-b634f200-3196-11ea-9c6e-a0126dc4bafa.png">
+<img width="1440" alt="スクリーンショット 2020-01-07 21 37 45" src="https://user-images.githubusercontent.com/57340298/71896289-b7feb580-3196-11ea-8491-3baebb2718ed.png">
+
+
 以下の様に時間差で文字の表示を行い、animationを制作しました。 <br>
 ```
 @keyframes Background { 
