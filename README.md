@@ -85,7 +85,8 @@ function none() {
   ```
 
 ・投稿時に評価機能を付けました<br>   
-<img width="735" alt="スクリーンショット 2020-01-07 21 42 32" src="https://user-images.githubusercontent.com/57340298/71896283-b2a16b00-3196-11ea-84f5-249e8ae021fc.png">
+![1aa2197c5787f19205fc10875382960a](https://user-images.githubusercontent.com/57340298/71950208-ce018a00-3219-11ea-9cdd-f1119c4a1f8c.gif) 
+<br>
 以下のコードで星マークを演出し、cssでhover時に変化を加えて直感的に操作を出来る様に致しました。<br>
 
 ### HTML
