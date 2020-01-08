@@ -19,7 +19,8 @@ TECH::EXPERTの基礎カリキュラム修了時にCSSの機能を沢山使い�
 ・cssのanimationのみで最初のオープニングを演出した事です。<br>
 # １枚目
 三行の文字が順番に表示されます。<br>
-<img width="1440" alt="スクリーンショット 2020-01-07 21 37 45" src="https://user-images.githubusercontent.com/57340298/71896289-b7feb580-3196-11ea-8491-3baebb2718ed.png">
+![d6556dedffa86390fadb50b5a8a5cf9c](https://user-images.githubusercontent.com/57340298/71949976-f3da5f00-3218-11ea-8a6f-2a58784ae20e.gif)
+
 
 # ２枚目（6秒後）
 <img width="1440" alt="スクリーンショット 2020-01-07 21 37 50" src="https://user-images.githubusercontent.com/57340298/71896286-b634f200-3196-11ea-9c6e-a0126dc4bafa.png">
